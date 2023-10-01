@@ -19,7 +19,7 @@ MobilityDB
 Programming Languages
 ----------------------
 
-*   [MEOS](https://libmeos.org): Mobility Engine Open Source library for Cloud
+*   [MEOS](https://libmeos.org): Mobility Engine Open Source C library
 *   [PyMEOS](https://github.com/MobilityDB/PyMEOS): Python driver for MEOS
 *   [JMEOS](https://github.com/MobilityDB/JMEOS): Java driver for MEOS
 *   [MEOS.NET](https://github.com/MobilityDB/MEOS.NET): .NET driver for MEOS
