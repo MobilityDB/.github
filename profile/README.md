@@ -63,6 +63,5 @@ Archived
 --------
 
 *   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) Initial Python driver for MobilityDB.
-*   [MobilityDB SQLAlchemy](https://github.com/adonmo/mobilitydb-sqlalchemy) is another independent package that provides extensions to [SQLAlchemy](https://www.sqlalchemy.org/) for interacting with MobilityDB
 *   [MobilityDB-QGIS](https://github.com/MobilityDB/MobilityDB-QGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
 *   [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC): JDBC driver for MobilityDB
