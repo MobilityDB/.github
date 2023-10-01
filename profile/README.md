@@ -43,7 +43,7 @@ Public Transport
 ----------------
 
 *   [MobilityDB-PublicTransport](https://github.com/MobilityDB/MobilityDB-PublicTransport): Integration of MobilityDB with public transport standards such as [GTFS](https://gtfs.org/) and [Netex](https://netex-cen.eu/)
-*   [MobilityDB-OpenTripPlanner](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner): Integration of MobilityDB with public transport standards such as [OpenTripPlanner](https://www.opentripplanner.org/)
+*   [MobilityDB-OpenTripPlanner](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner): Integration of MobilityDB with the [OpenTripPlanner](https://www.opentripplanner.org/) tool, an open source multimodal trip planner.
 
 Forthcoming
 -----------
