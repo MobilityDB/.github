@@ -15,6 +15,7 @@ MobilityDB
 
 *   [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop): Introduction to MobilityDB illustrated in various usage scenarios
 *   [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD): Data generator and benchmark tool based on the [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) benchmark. The data generator takes input data from [Open Street Map](https://www.openstreetmap.org/) and uses [pgRouting](https://pgrouting.org/) to generate routes between pairs of source and target locations.
+*   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB
 
 Programming Languages
 ----------------------
@@ -52,11 +53,6 @@ Forthcoming
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on MobilityDB
 *   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory Spark-SQL data management platform built on JMEOS
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
-
-Miscellaneous
--------------
-
-*   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB
 
 
 Archived 
