@@ -2,14 +2,13 @@
 MobilityDB Projects
 ===================
 
-<img src="https://github.com/MobilityDB/MobilityDB/doc/images/mobilitydb-logo.svg" width="200" alt="MobilityDB Logo" />
-
+<img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb-logo.svg" width="200" alt="MobilityDB Logo" />
  
 [MobilityDB](https://github.com/MobilityDB/MobilityDB) is an open source geospatial trajectory data management & analysis platform. This document lists the projects around MobilityDB.
 
 MobilityDB is developed by the Computer & Decision Engineering Department of the [Université libre de Bruxelles](https://www.ulb.be/) (ULB) under the direction of [Prof. Esteban Zimányi](http://cs.ulb.ac.be/members/esteban/). ULB is an OGC Associate Member and member of the OGC Moving Feature Standard Working Group ([MF-SWG](https://www.ogc.org/projects/groups/movfeatswg)).
 
-<img src="https://github.com/MobilityDB/MobilityDB/doc/images/OGC_Associate_Member_3DR.png" width="100" alt="OGC Associate Member Logo" />
+<img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/OGC_Associate_Member_3DR.png" width="100" alt="OGC Associate Member Logo" />
 
 MobilityDB
 ----------
