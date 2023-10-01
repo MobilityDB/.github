@@ -43,25 +43,25 @@ Public Transport
 ----------------
 
 *   [MobilityDB-PublicTransport](https://github.com/MobilityDB/MobilityDB-PublicTransport): Integration of MobilityDB with public transport standards such as [GTFS](https://gtfs.org/) and [Netex](https://netex-cen.eu/)
-*   [MobilityDB-OpenTripPlanner](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner): Integration of MobilityDB with the [OpenTripPlanner](https://www.opentripplanner.org/) tool, an open source multimodal trip planner.
+*   [MobilityDB-OpenTripPlanner](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner): Integration of MobilityDB with the [OpenTripPlanner](https://www.opentripplanner.org/) tool, an open source multimodal trip planner
 
 Forthcoming
 -----------
 
-*   [MobilityStream](https://github.com/MobilityDB/MobilityStream): Geospatial trajectory data stream management platform built on MobilityDB.
+*   [MobilityStream](https://github.com/MobilityDB/MobilityStream): Geospatial trajectory data stream management platform built on MobilityDB
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on MobilityDB
-*   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory Spark-SQL data management platform built on JMEOS.
-*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend.
+*   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory Spark-SQL data management platform built on JMEOS
+*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
 
 Miscellaneous
 -------------
 
-*   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB.
+*   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB
 
 
 Archived 
 --------
 
-*   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) Initial Python driver for MobilityDB.
+*   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) Initial Python driver for MobilityDB
 *   [MobilityDB-QGIS](https://github.com/MobilityDB/MobilityDB-QGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
 *   [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC): JDBC driver for MobilityDB
