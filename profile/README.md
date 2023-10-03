@@ -53,6 +53,7 @@ Forthcoming
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on MobilityDB
 *   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory Spark-SQL data management platform built on JMEOS
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
+*   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for MobilityDB
 
 
 Archived 
