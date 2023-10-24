@@ -49,11 +49,12 @@ Public Transport
 Forthcoming
 -----------
 
-*   [MobilityStream](https://github.com/MobilityDB/MobilityStream): Geospatial trajectory data stream management platform built on MobilityDB
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on MobilityDB
-*   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory Spark-SQL data management platform built on JMEOS
-*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
 *   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for MobilityDB
+*   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory Flink data streaming platform built on Flink
+*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
+*   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory data management platform built on Spark-SQL
+*   [MobilityStream](https://github.com/MobilityDB/MobilityStream): Geospatial trajectory data stream management platform built on MobilityDB
 
 
 Archived 
