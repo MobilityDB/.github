@@ -26,7 +26,6 @@ Programming Languages
 *   [GoMEOS](https://github.com/MobilityDB/GoMEOS): Go driver for MEOS
 *   [RustMEOS](https://github.com/MobilityDB/RustMEOS): Rust driver for MEOS
 *   [MEOS.NET](https://github.com/MobilityDB/MEOS.NET): .NET driver for MEOS
-*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for MEOS
 
 Cloud
 -----
@@ -58,6 +57,7 @@ Forthcoming
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
 *   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory data management platform built on Spark-SQL
 *   [MobilityStream](https://github.com/MobilityDB/MobilityStream): Geospatial trajectory data stream management platform built on MobilityDB
+*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for MEOS
 
 
 Archived 
