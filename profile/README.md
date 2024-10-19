@@ -24,7 +24,7 @@ Programming Languages
 *   [PyMEOS](https://github.com/MobilityDB/PyMEOS): Python driver for MEOS
 *   [JMEOS](https://github.com/MobilityDB/JMEOS): Java driver for MEOS
 *   [GoMEOS](https://github.com/MobilityDB/GoMEOS): Go driver for MEOS
-*   [RustMEOS](https://github.com/MobilityDB/RustMEOS): Rust driver for MEOS
+*   [meos-rs](https://github.com/MobilityDB/meos-rs): Rust driver for MEOS
 *   [MEOS.NET](https://github.com/MobilityDB/MEOS.NET): .NET driver for MEOS
 
 Cloud
