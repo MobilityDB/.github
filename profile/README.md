@@ -42,6 +42,11 @@ Visualization
 *   [MobilityDB-OpenLayers](https://github.com/MobilityDB/MobilityDB-OpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
 *   [MOVE plugin](https://github.com/mschoema/move) to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
 
+Indexing
+--------
+
+*   [MEST](https://github.com/MobilityDB/mest): Multi-Entry Search Trees (MEST)
+
 Public Transport
 ----------------
 
