@@ -18,7 +18,7 @@ You can find detailed explanations about MobilityDB and its use in various appli
 
 https://link.springer.com/book/10.1007/978-3-031-82636-8
 
-<img src="https://github.com/MobilityDB/MobilityDataScienceBook/blob/main/978-3-031-82636-8.webp" width="100" alt="Mobility Data Science Book" />
+<img src="https://github.com/MobilityDB/MobilityDataScienceBook/blob/main/978-3-031-82636-8.webp" width="200" alt="Mobility Data Science Book" />
 
 MobilityDB
 ----------
