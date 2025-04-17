@@ -10,6 +10,16 @@ MobilityDB is developed by the Computer & Decision Engineering Department of the
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/OGC_Associate_Member_3DR.png" width="100" alt="OGC Associate Member Logo" />
 
+You can find detailed explanations about MobilityDB and its use in various application scenarios in our texbook
+
+> Mahmoud Sakr, Alejandro Vaisman, Esteban Zimányi<br>
+> Mobility Data Science: From Data to Insights<br>
+> Springer 2025
+
+https://link.springer.com/book/10.1007/978-3-031-82636-8
+
+<img src="https://github.com/MobilityDB/MobilityDataScienceBook/blob/main/978-3-031-82636-8.webp" width="100" alt="Mobility Data Science Book" />
+
 MobilityDB
 ----------
 
