@@ -12,9 +12,9 @@ MobilityDB is developed by the Computer & Decision Engineering Department of the
 
 You can find detailed explanations about MobilityDB and its use in various application scenarios in our texbook
 
-> Mahmoud Sakr, Alejandro Vaisman, Esteban Zimányi<br>
-> Mobility Data Science: From Data to Insights<br>
-> Springer 2025
+  * Mahmoud Sakr, Alejandro Vaisman, Esteban Zimányi<br>
+    *Mobility Data Science: From Data to Insights*<br>
+    Springer 2025
 
 https://link.springer.com/book/10.1007/978-3-031-82636-8
 
