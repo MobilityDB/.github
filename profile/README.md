@@ -20,7 +20,7 @@ https://link.springer.com/book/10.1007/978-3-031-82636-8
 
 <img src="https://github.com/MobilityDB/MobilityDataScienceBook/blob/main/978-3-031-82636-8.webp" width="150" alt="Mobility Data Science Book" />
 
-Thee book has a [companion website](https://github.com/MobilityDB/MobilityDataScienceBook) containing the datasets used in the book alongside with the scripts allowing you to input these datasets in PostgreSQL and reproduce the examples and exercises in the book.
+The book has a [companion website](https://github.com/MobilityDB/MobilityDataScienceBook) containing the datasets used in the book alongside with the scripts allowing you to input these datasets in PostgreSQL and reproduce the examples and exercises in the book.
 
 MobilityDB
 ----------
