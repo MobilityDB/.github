@@ -52,7 +52,7 @@ Visualization
 *   [MobilityDB-Deck](https://github.com/MobilityDB/MobilityDB-Deck): Integration of MobilityDB with [deck.gl](https://deck.gl/)
 *   [MobilityDB-Leaflet](https://github.com/MobilityDB/MobilityDB-Leaflet): Integration of MobilityDB with [Leaflet](https://leafletjs.com/)
 *   [MobilityDB-OpenLayers](https://github.com/MobilityDB/MobilityDB-OpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
-*   [MOVE plugin](https://github.com/mschoema/move) to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
+*   [MOVE plugin](https://github.com/MobilityDB/move) to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
 
 Indexing
 --------
