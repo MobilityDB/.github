@@ -70,7 +70,9 @@ Forthcoming
 
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on MobilityDB
 *   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for MobilityDB
-*   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory Flink data streaming platform built on Flink
+*   [MobilityNebula](https://github.com/MobilityDB/MobilityNebula): Geospatial trajectory data streaming platform built on NebulaStream
+*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Geospatial trajectory data streaming platform built on Spark
+*   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on Flink
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
 *   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory data management platform built on Spark-SQL
 *   [MobilityStream](https://github.com/MobilityDB/MobilityStream): Geospatial trajectory data stream management platform built on MobilityDB
