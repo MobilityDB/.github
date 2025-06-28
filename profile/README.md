@@ -68,12 +68,13 @@ Public Transport
 Forthcoming
 -----------
 
-*   [MobilityNebula](https://github.com/MobilityDB/MobilityNebula): Geospatial trajectory data streaming platform built on NebulaStream
-*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Geospatial trajectory data streaming platform built on Spark
-*   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on Flink
-*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
-*   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data management platform built on DuckDB
-*   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on MobilityDB
+*   [MobilityNebula](https://github.com/MobilityDB/MobilityNebula): Geospatial trajectory data streaming platform built on [NebulaStream](https://nebula.stream/)
+*   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on [Flink](https://flink.apache.org/)
+*   [MobilityKafka](https://github.com/MobilityDB/MobilityKafka): Geospatial trajectory data management platform built on [Kafka](https://kafka.apache.org/)
+*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Geospatial trajectory data streaming platform built on [Spark](https://spark.apache.org/)
+*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): [MovingPandas](https://movingpandas.org/) version using  [PyMEOS](https://github.com/MobilityDB/PyMEOS) as backend
+*   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data management platform built on [DuckDB](https://duckdb.org/)
+*   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on [MobilityDB](https://github.com/MobilityDB/MobilityDB)
 *   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for MobilityDB
 *   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for MEOS
 
