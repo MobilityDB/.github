@@ -75,8 +75,8 @@ Forthcoming
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): [MovingPandas](https://movingpandas.org/) version using  [PyMEOS](https://github.com/MobilityDB/PyMEOS) as backend
 *   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data management platform built on [DuckDB](https://duckdb.org/)
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on [MobilityDB](https://github.com/MobilityDB/MobilityDB)
-*   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for MobilityDB
-*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for MEOS
+*   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for [MobilityDB](https://github.com/MobilityDB/MobilityDB)
+*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for [MEOS](https://libmeos.org/)
 
 
 Archived 
