@@ -74,8 +74,7 @@ Forthcoming
 *   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Geospatial trajectory data streaming platform built on Spark
 *   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on Flink
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): MovingPandas version using  PyMEOS as backend
-*   [MobilitySpark](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory data management platform built on Spark-SQL
-*   [MobilityDuck](https://github.com/MobilityDB/MobilityDB-Spark) Geospatial trajectory data management platform built on DuckDB
+*   [MobilityDuck](https://github.com/MobilityDB/MobilityDB-Spark): Geospatial trajectory data management platform built on DuckDB
 *   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for MEOS
 
 
