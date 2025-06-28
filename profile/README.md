@@ -4,7 +4,7 @@ MobilityDB Projects
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb-logo.svg" width="200" alt="MobilityDB Logo" />
  
-[MobilityDB](https://github.com/MobilityDB/MobilityDB) is an open source geospatial trajectory data management & analysis platform. This document lists the projects around MobilityDB.
+[MobilityDB](https://github.com/MobilityDB/MobilityDB) is an open-source geospatial trajectory data management & analysis platform. This document lists the projects around MobilityDB.
 
 MobilityDB is developed by the Computer & Decision Engineering Department of the [Université libre de Bruxelles](https://www.ulb.be/) (ULB) under the direction of [Prof. Esteban Zimányi](http://cs.ulb.ac.be/members/esteban/). ULB is an OGC Associate Member and member of the OGC Moving Feature Standard Working Group ([MF-SWG](https://www.ogc.org/projects/groups/movfeatswg)).
 
@@ -70,10 +70,10 @@ Forthcoming
 
 *   [MobilityNebula](https://github.com/MobilityDB/MobilityNebula): Geospatial trajectory data streaming platform built on [NebulaStream](https://nebula.stream/)
 *   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on [Flink](https://flink.apache.org/)
-*   [MobilityKafka](https://github.com/MobilityDB/MobilityKafka): Geospatial trajectory data management platform built on [Kafka](https://kafka.apache.org/)
-*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Geospatial trajectory data streaming platform built on [Spark](https://spark.apache.org/)
+*   [MobilityKafka](https://github.com/MobilityDB/MobilityKafka): Geospatial trajectory data streaming platform built on [Kafka](https://kafka.apache.org/)
+*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Large-scale geospatial trajectory data analytics platform built on [Spark](https://spark.apache.org/)
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): [MovingPandas](https://movingpandas.org/) version using  [PyMEOS](https://github.com/MobilityDB/PyMEOS) as backend
-*   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data management platform built on [DuckDB](https://duckdb.org/)
+*   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data analytics platform built on [DuckDB](https://duckdb.org/)
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on [MobilityDB](https://github.com/MobilityDB/MobilityDB)
 *   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for [MobilityDB](https://github.com/MobilityDB/MobilityDB)
 *   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for [MEOS](https://libmeos.org/)
