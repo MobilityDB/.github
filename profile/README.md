@@ -1,6 +1,6 @@
 
-MobilityDB Projects
-===================
+MobilityDB Ecosystem
+====================
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb-logo.svg" width="200" alt="MobilityDB Logo" />
  
