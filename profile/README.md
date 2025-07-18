@@ -22,6 +22,10 @@ https://link.springer.com/book/10.1007/978-3-031-82636-8
 
 A [companion website](https://github.com/MobilityDB/MobilityDataScienceBook) contains the datasets used in the book alongside with the scripts allowing you to input these datasets in PostgreSQL and reproduce the use cases, visualizations, and exercises.
 
+We describe below the various projects composing the MobilityDB ecosystem.
+
+<img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb_ecosystem.png" width="700" alt="MobilityDB Ecosystem" />
+
 MobilityDB
 ----------
 
