@@ -93,7 +93,7 @@ Archived
 Ackowledgements
 ---------------
 
-<img src="[doc/images/eu-flag.jpg](https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/eu-flag.jpg)" alt="EU Flag" style="width: 100px; float:left; margin-right: 10px;" align="middle" />
+<img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/eu-flag.jpg" alt="EU Flag" style="width: 100px; float:left; margin-right: 10px;" align="middle" />
 <p>
 The MobilityDB project has received funding from the European Union's <a href="https://open-research-europe.ec.europa.eu/gateways/horizon-europe">Horizon Europe</a> research and innovation programme under grant agreements No 101070279 <a href="https://mobispaces.eu/" target="blank">MobiSpaces</a> and No 101093051 <a href="https://emeralds-horizon.eu/" target="blank">EMERALDS</a>.
 </p>
