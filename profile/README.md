@@ -30,7 +30,7 @@ MobilityDB
 ----------
 
 *   [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop): Introduction to MobilityDB illustrated in various usage scenarios
-*   [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD): Data generator and benchmark tool based on the [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) benchmark. The data generator takes input data from [Open Street Map](https://www.openstreetmap.org/) and uses [pgRouting](https://pgrouting.org/) to generate routes between pairs of source and target locations.
+*   [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD): Data generator and benchmark tool based on the [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) benchmark. The data generator takes input data from [Open Street Map](https://www.openstreetmap.org/) and uses [pgRouting](https://pgrouting.org/) to generate routes between pairs of source and target locations. The original version of the generator uses OSM data for Brussels, Belgium. Another version version of the generator uses OSM data for [Hanoi]([https://secondo-database.github.io/BerlinMOD/BerlinMOD.html](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi)), Vietnam
 *   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB
 
 Programming Languages
