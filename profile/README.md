@@ -30,7 +30,7 @@ MobilityDB
 ----------
 
 *   [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop): Introduction to MobilityDB illustrated in various usage scenarios
-*   [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD): Data generator and benchmark tool based on the [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) benchmark. The data generator takes input data from [Open Street Map](https://www.openstreetmap.org/) and uses [pgRouting](https://pgrouting.org/) to generate routes between pairs of source and target locations. The original version of the generator uses OSM data for Brussels, Belgium. Another version version of the generator uses OSM data for [Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi), Vietnam
+*   [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD): Data generator and benchmark tool based on the [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) benchmark. The data generator takes input data from [Open Street Map](https://www.openstreetmap.org/) and uses [pgRouting](https://pgrouting.org/) to generate routes between pairs of source and target locations. The original version of the generator uses OSM data for Brussels, Belgium. Another version of the generator uses OSM data for [Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi), Vietnam.
 *   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB
 
 Programming Languages
@@ -75,7 +75,7 @@ Forthcoming
 *   [MobilityNebula](https://github.com/MobilityDB/MobilityNebula): Geospatial trajectory data streaming platform built on [NebulaStream](https://nebula.stream/)
 *   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on [Flink](https://flink.apache.org/)
 *   [MobilityKafka](https://github.com/MobilityDB/MobilityKafka): Geospatial trajectory data streaming platform built on [Kafka](https://kafka.apache.org/)
-*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Large-scale geospatial trajectory data analytics platform built on [Spark](https://spark.apache.org/)
+*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Large-scale geospatial trajectory data analytics platform built on [Spark](https://spark.apache.org/). A similar project based on [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) is [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark).
 *   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): [MovingPandas](https://movingpandas.org/) version using  [PyMEOS](https://github.com/MobilityDB/PyMEOS) as backend
 *   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data analytics platform built on [DuckDB](https://duckdb.org/)
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on [MobilityDB](https://github.com/MobilityDB/MobilityDB)
