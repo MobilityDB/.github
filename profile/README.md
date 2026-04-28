@@ -42,6 +42,8 @@ Programming Languages
 *   [GoMEOS](https://github.com/MobilityDB/GoMEOS): Go driver for MEOS
 *   [meos-rs](https://github.com/MobilityDB/meos-rs): Rust driver for MEOS
 *   [MEOS.NET](https://github.com/MobilityDB/MEOS.NET): .NET driver for MEOS
+*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript/Typescript driver for MEOS
+*   [MEOS-IDL-Generator](https://github.com/MobilityDB/MEOS-IDL-Generator): JSON parser for MEOS
 
 Cloud
 -----
@@ -80,7 +82,6 @@ Forthcoming
 *   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data analytics platform built on [DuckDB](https://duckdb.org/)
 *   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on [MobilityDB](https://github.com/MobilityDB/MobilityDB)
 *   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for [MobilityDB](https://github.com/MobilityDB/MobilityDB)
-*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript driver for [MEOS](https://libmeos.org/)
 
 
 Archived 
