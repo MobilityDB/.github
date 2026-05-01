@@ -18,7 +18,7 @@ Detailed explanations and application scenarios are in the project's textbook:
 > Mahmoud Sakr, Alejandro Vaisman, Esteban Zimányi.
 > [*Mobility Data Science: From Data to Insights*](https://link.springer.com/book/10.1007/978-3-031-82636-8). Springer, 2025.
 
-The companion datasets and reproducible scripts live in [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook); a follow-up volume's companion is at [MobilityDataScienceBookVol2](https://github.com/MobilityDB/MobilityDataScienceBookVol2).
+The companion datasets and reproducible scripts live in [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook).
 
 <img src="https://github.com/MobilityDB/MobilityDataScienceBook/blob/main/978-3-031-82636-8.webp" width="150" alt="Mobility Data Science Book" />
 
@@ -114,8 +114,7 @@ Each binding follows its language community's naming convention.
 | Repository | Description |
 |---|---|
 | [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop) | Hands-on workshop materials. |
-| [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook) | Companion datasets and scripts for the textbook (vol 1). |
-| [MobilityDataScienceBookVol2](https://github.com/MobilityDB/MobilityDataScienceBookVol2) | Companion for the follow-up volume. |
+| [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook) | Companion datasets and scripts for the textbook. |
 
 ### Research
 
