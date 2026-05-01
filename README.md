@@ -34,16 +34,17 @@ Cloud
 Visualization
 -------------
 
-*   [MobilityDB-Deck](https://github.com/MobilityDB/MobilityDB-Deck): Integration of MobilityDB with [deck.gl](https://deck.gl/)
-*   [MobilityDB-Leaflet](https://github.com/MobilityDB/MobilityDB-Leaflet): Integration of MobilityDB with [Leaflet](https://leafletjs.com/)
-*   [MobilityDB-OpenLayers](https://github.com/MobilityDB/MobilityDB-OpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
-*   [MOVE plugin](https://github.com/mschoema/move) to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
+*   [MobilityDeck](https://github.com/MobilityDB/MobilityDeck): Integration of MobilityDB with [deck.gl](https://deck.gl/)
+*   [MobilityLeaflet](https://github.com/MobilityDB/MobilityLeaflet): Integration of MobilityDB with [Leaflet](https://leafletjs.com/)
+*   [MobilityOpenLayers](https://github.com/MobilityDB/MobilityOpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
+*   [MobilityQGIS](https://github.com/MobilityDB/MobilityQGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
+*   [move](https://github.com/MobilityDB/move) — QGIS plugin to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
 
 Public Transport
 ----------------
 
 *   [MobilityDB-PublicTransport](https://github.com/MobilityDB/MobilityDB-PublicTransport): Integration of MobilityDB with public transport standards such as [GTFS](https://gtfs.org/) and [Netex](https://netex-cen.eu/)
-*   [MobilityDB-OpenTripPlanner](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner): Integration of MobilityDB with public transport standards such as [OpenTripPlanner](https://www.opentripplanner.org/)
+*   [MobilityOpenTripPlanner](https://github.com/MobilityDB/MobilityOpenTripPlanner): Integration of MobilityDB with public transport standards such as [OpenTripPlanner](https://www.opentripplanner.org/)
 
 Forthcoming
 -----------
@@ -62,7 +63,7 @@ Miscellaneous
 Archived 
 --------
 
-*   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) supports both the [psycopg2](https://www.psycopg.org/) and the [asyncpg](https://github.com/MagicStack/asyncpg) adapters for PostgreSQL and uses the [postgis](https://github.com/tilery/python-postgis) adapter for PostGIS.
-*   [MobilityDB SQLAlchemy](https://github.com/adonmo/mobilitydb-sqlalchemy) is another independent package that provides extensions to [SQLAlchemy](https://www.sqlalchemy.org/) for interacting with MobilityDB
-*   [MobilityDB-QGIS](https://github.com/MobilityDB/MobilityDB-QGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
-*   [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC): JDBC driver for MobilityDB
+*   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) — superseded by [PyMEOS](https://github.com/MobilityDB/PyMEOS).
+*   [MobilityDB SQLAlchemy](https://github.com/adonmo/mobilitydb-sqlalchemy) — independent package providing [SQLAlchemy](https://www.sqlalchemy.org/) extensions for MobilityDB.
+*   [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC) — superseded by [JMEOS](https://github.com/MobilityDB/JMEOS).
+*   [pg_mfserv](https://github.com/MobilityDB/pg_mfserv) — superseded by [MobilityAPI](https://github.com/MobilityDB/MobilityAPI).
