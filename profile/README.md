@@ -55,9 +55,9 @@ Cloud
 Visualization
 -------------
 
-*   [MobilityDB-Deck](https://github.com/MobilityDB/MobilityDB-Deck): Integration of MobilityDB with [deck.gl](https://deck.gl/)
+*   [MobilityDeck](https://github.com/MobilityDB/MobilityDeck): Integration of MobilityDB with [deck.gl](https://deck.gl/)
 *   [MobilityDB-Leaflet](https://github.com/MobilityDB/MobilityDB-Leaflet): Integration of MobilityDB with [Leaflet](https://leafletjs.com/)
-*   [MobilityDB-OpenLayers](https://github.com/MobilityDB/MobilityDB-OpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
+*   [MobilityOpenLayers](https://github.com/MobilityDB/MobilityOpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
 *   [MOVE plugin](https://github.com/MobilityDB/move) to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
 
 Indexing
@@ -88,7 +88,7 @@ Archived
 --------
 
 *   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) Initial Python driver for MobilityDB
-*   [MobilityDB-QGIS](https://github.com/MobilityDB/MobilityDB-QGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
+*   [MobilityQGIS](https://github.com/MobilityDB/MobilityQGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
 *   [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC): JDBC driver for MobilityDB
 
 Ackowledgements
