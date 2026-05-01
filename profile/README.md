@@ -1,101 +1,156 @@
-
 MobilityDB Ecosystem
 ====================
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb-logo.svg" width="200" alt="MobilityDB Logo" />
- 
-[MobilityDB](https://github.com/MobilityDB/MobilityDB) is an open-source geospatial trajectory data management & analysis platform. This document lists the projects around MobilityDB.
 
-MobilityDB is developed by the Computer & Decision Engineering Department of the [Université libre de Bruxelles](https://www.ulb.be/) (ULB) under the direction of [Prof. Esteban Zimányi](http://cs.ulb.ac.be/members/esteban/). ULB is an OGC Associate Member and member of the OGC Moving Feature Standard Working Group ([MF-SWG](https://www.ogc.org/projects/groups/movfeatswg)).
+This organization hosts the source code for the **MobilityDB ecosystem** — an open-source platform for geospatial trajectory data management and analysis.
+
+For the **conceptual overview, type system, tutorials, quickstarts, and encoding specifications**, see [**libmeos.org**](https://libmeos.org) — the project's public front door. This page is the **repository map**: where each piece of code lives.
+
+The project is developed by the Computer & Decision Engineering Department of the [Université libre de Bruxelles (ULB)](https://www.ulb.be/) under the direction of [Prof. Esteban Zimányi](http://cs.ulb.ac.be/members/esteban/). ULB is an OGC Associate Member and member of the OGC Moving Feature Standard Working Group ([MF-SWG](https://www.ogc.org/projects/groups/movfeatswg)).
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/OGC_Associate_Member_3DR.png" width="100" alt="OGC Associate Member Logo" />
 
-You can find detailed explanations about MobilityDB and its use in various application scenarios in our texbook
+## Book
 
-  * Mahmoud Sakr, Alejandro Vaisman, Esteban Zimányi<br>
-    *Mobility Data Science: From Data to Insights*<br>
-    Springer 2025
+Detailed explanations and application scenarios are in the project's textbook:
 
-https://link.springer.com/book/10.1007/978-3-031-82636-8
+> Mahmoud Sakr, Alejandro Vaisman, Esteban Zimányi.
+> [*Mobility Data Science: From Data to Insights*](https://link.springer.com/book/10.1007/978-3-031-82636-8). Springer, 2025.
+
+The companion datasets and reproducible scripts live in [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook); a follow-up volume's companion is at [MobilityDataScienceBookVol2](https://github.com/MobilityDB/MobilityDataScienceBookVol2).
 
 <img src="https://github.com/MobilityDB/MobilityDataScienceBook/blob/main/978-3-031-82636-8.webp" width="150" alt="Mobility Data Science Book" />
 
-A [companion website](https://github.com/MobilityDB/MobilityDataScienceBook) contains the datasets used in the book alongside with the scripts allowing you to input these datasets in PostgreSQL and reproduce the use cases, visualizations, and exercises.
-
-We describe below the various projects composing the MobilityDB ecosystem.
+## Repository map
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb_ecosystem.png" width="700" alt="MobilityDB Ecosystem" />
 
-MobilityDB
-----------
+### Core C library
 
-*   [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop): Introduction to MobilityDB illustrated in various usage scenarios
-*   [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD): Data generator and benchmark tool based on the [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) benchmark. The data generator takes input data from [Open Street Map](https://www.openstreetmap.org/) and uses [pgRouting](https://pgrouting.org/) to generate routes between pairs of source and target locations. The original version of the generator uses OSM data for Brussels, Belgium. Another version of the generator uses OSM data for [Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi), Vietnam.
-*   [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker): Docker images for MobilityDB
+| Repository | Description |
+|---|---|
+| [MEOS](https://libmeos.org) | Mobility Engine, Open Source — the canonical C library underlying every other piece. |
 
-Programming Languages
-----------------------
+### SQL layers (peers above MEOS)
 
-*   [MEOS](https://libmeos.org): Mobility Engine Open Source C library
-*   [PyMEOS](https://github.com/MobilityDB/PyMEOS): Python driver for MEOS
-*   [JMEOS](https://github.com/MobilityDB/JMEOS): Java driver for MEOS
-*   [GoMEOS](https://github.com/MobilityDB/GoMEOS): Go driver for MEOS
-*   [meos-rs](https://github.com/MobilityDB/meos-rs): Rust driver for MEOS
-*   [MEOS.NET](https://github.com/MobilityDB/MEOS.NET): .NET driver for MEOS
-*   [MEOS.js](https://github.com/MobilityDB/MEOS.js): Javascript/Typescript driver for MEOS
-*   [MEOS-IDL-Generator](https://github.com/MobilityDB/MEOS-IDL-Generator): JSON parser for MEOS
+| Repository | Description |
+|---|---|
+| [MobilityDB](https://github.com/MobilityDB/MobilityDB) | PostgreSQL extension — the project's reference SQL surface. |
+| [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) | DuckDB extension — peer SQL layer for analytics / columnar workloads. |
 
-Cloud
------
+### HTTP / API layer
 
-*   [MobilityDB-AWS](https://github.com/MobilityDB/MobilityDB-AWS): MobilityDB on Amazon Web Services
-*   [MobilityDB-Azure](https://github.com/MobilityDB/MobilityDB-Azure): MobilityDB on Azure
-*   [MobilityDB-GCP](https://github.com/MobilityDB/MobilityDB-GCP): MobilityDB on Google Cloud Platform
+| Repository | Description |
+|---|---|
+| [MobilityAPI](https://github.com/MobilityDB/MobilityAPI) | HTTP server implementing the OGC API – Moving Features Standard. |
 
-Visualization
--------------
+### Language bindings of MEOS
 
-*   [MobilityDB-Deck](https://github.com/MobilityDB/MobilityDB-Deck): Integration of MobilityDB with [deck.gl](https://deck.gl/)
-*   [MobilityDB-Leaflet](https://github.com/MobilityDB/MobilityDB-Leaflet): Integration of MobilityDB with [Leaflet](https://leafletjs.com/)
-*   [MobilityDB-OpenLayers](https://github.com/MobilityDB/MobilityDB-OpenLayers): Integration of MobilityDB with [OpenLayers](https://openlayers.org/)
-*   [MOVE plugin](https://github.com/MobilityDB/move) to display the result of MobilityDB queries in [QGIS](https://qgis.org/)
+Each binding follows its language community's naming convention.
 
-Indexing
---------
+| Repository | Language |
+|---|---|
+| [PyMEOS](https://github.com/MobilityDB/PyMEOS) | Python |
+| [JMEOS](https://github.com/MobilityDB/JMEOS) | Java / JVM |
+| [GoMEOS](https://github.com/MobilityDB/GoMEOS) | Go |
+| [meos-rs](https://github.com/MobilityDB/meos-rs) | Rust |
+| [MEOS.NET](https://github.com/MobilityDB/MEOS.NET) | .NET / C# |
+| [MEOS.js](https://github.com/MobilityDB/MEOS.js) | JavaScript / TypeScript |
 
-*   [MEST](https://github.com/MobilityDB/mest): Multi-Entry Search Trees (MEST)
+### Tooling
 
-Public Transport
-----------------
+| Repository | Description |
+|---|---|
+| [MEOS-API](https://github.com/MobilityDB/MEOS-API) | Machine-readable description of the MEOS C-library API (`meos-api.json`), generated from the MEOS headers via libclang. Consumed by the language bindings for code generation. |
 
-*   [MobilityDB-PublicTransport](https://github.com/MobilityDB/MobilityDB-PublicTransport): Integration of MobilityDB with public transport standards such as [GTFS](https://gtfs.org/) and [Netex](https://netex-cen.eu/)
-*   [MobilityDB-OpenTripPlanner](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner): Integration of MobilityDB with the [OpenTripPlanner](https://www.opentripplanner.org/) tool, an open source multimodal trip planner
+### Visualization and UI integrations
 
-Forthcoming
------------
+| Repository | Stack |
+|---|---|
+| [MobilityDeck](https://github.com/MobilityDB/MobilityDeck) | [deck.gl](https://deck.gl/) |
+| [MobilityOpenLayers](https://github.com/MobilityDB/MobilityOpenLayers) | [OpenLayers](https://openlayers.org/) |
+| [MobilityLeaflet](https://github.com/MobilityDB/MobilityLeaflet) | [Leaflet](https://leafletjs.com/) |
+| [MobilityQGIS](https://github.com/MobilityDB/MobilityQGIS) | [QGIS](https://qgis.org/) integration |
+| [MobilityGeoServer](https://github.com/MobilityDB/MobilityGeoServer) | [GeoServer](https://geoserver.org/) |
+| [move](https://github.com/MobilityDB/move) | QGIS plugin for visualizing MobilityDB query results |
 
-*   [MobilityNebula](https://github.com/MobilityDB/MobilityNebula): Geospatial trajectory data streaming platform built on [NebulaStream](https://nebula.stream/)
-*   [MobilityFlink](https://github.com/MobilityDB/MobilityFlink): Geospatial trajectory data streaming platform built on [Flink](https://flink.apache.org/)
-*   [MobilityKafka](https://github.com/MobilityDB/MobilityKafka): Geospatial trajectory data streaming platform built on [Kafka](https://kafka.apache.org/)
-*   [MobilitySpark](https://github.com/MobilityDB/MobilitySpark): Large-scale geospatial trajectory data analytics platform built on [Spark](https://spark.apache.org/). A similar project based on [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) is [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark).
-*   [MobilityPandas](https://github.com/MobilityDB/MobilityPandas): [MovingPandas](https://movingpandas.org/) version using  [PyMEOS](https://github.com/MobilityDB/PyMEOS) as backend
-*   [MobilityDuck](https://github.com/MobilityDB/MobilityDuck): Geospatial trajectory data analytics platform built on [DuckDB](https://duckdb.org/)
-*   [MobilityAPI](https://github.com/MobilityDB/MobilityAPI): Implementation of the [OGC](https://www.ogc.org/) [Moving-Features API](https://ogcapi.ogc.org/movingfeatures/overview.html) based on [MobilityDB](https://github.com/MobilityDB/MobilityDB)
-*   [MobilityDB-MapMatching](https://github.com/MobilityDB/MobilityDB-MapMatching): Map Matching As Service for [MobilityDB](https://github.com/MobilityDB/MobilityDB)
+### Application platforms
 
+| Repository | Engine / framework |
+|---|---|
+| [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) | [Apache Spark](https://spark.apache.org/) — large-scale analytics |
+| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) variant |
+| [MobilityFlink](https://github.com/MobilityDB/MobilityFlink) | [Apache Flink](https://flink.apache.org/) — streaming |
+| [MobilityFlink-Deck](https://github.com/MobilityDB/MobilityFlink-Deck) | Flink + deck.gl integration |
+| [MobilityKafka](https://github.com/MobilityDB/MobilityKafka) | [Apache Kafka](https://kafka.apache.org/) — streaming |
+| [MobilityNebula](https://github.com/MobilityDB/MobilityNebula) | [NebulaStream](https://nebula.stream/) |
+| [MobilityPandas](https://github.com/MobilityDB/MobilityPandas) | [MovingPandas](https://movingpandas.org/) backed by PyMEOS |
+| [MobilityOpenTripPlanner](https://github.com/MobilityDB/MobilityOpenTripPlanner) | [OpenTripPlanner](https://www.opentripplanner.org/) — multimodal trip planning |
+| [MobilityMapMatching](https://github.com/MobilityDB/MobilityMapMatching) | Map matching as a service |
+| [MobilityDB-PublicTransport](https://github.com/MobilityDB/MobilityDB-PublicTransport) | [GTFS](https://gtfs.org/) / [Netex](https://netex-cen.eu/) integration |
 
-Archived 
---------
+### Cloud and deployment
 
-*   [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) Initial Python driver for MobilityDB
-*   [MobilityDB-QGIS](https://github.com/MobilityDB/MobilityDB-QGIS): Integration of MobilityDB with [QGIS](https://qgis.org/)
-*   [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC): JDBC driver for MobilityDB
+| Repository | Target |
+|---|---|
+| [MobilityDB-AWS](https://github.com/MobilityDB/MobilityDB-AWS) | Amazon Web Services |
+| [MobilityDB-Azure](https://github.com/MobilityDB/MobilityDB-Azure) | Microsoft Azure |
+| [MobilityDB-GCP](https://github.com/MobilityDB/MobilityDB-GCP) | Google Cloud Platform |
+| [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker) | Docker images |
 
-Ackowledgements
----------------
+### Datasets and benchmarks
+
+| Repository | Description |
+|---|---|
+| [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD) | [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) data generator and benchmark, using [Open Street Map](https://www.openstreetmap.org/) data and [pgRouting](https://pgrouting.org/) (Brussels by default). |
+| [MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi) | BerlinMOD generator instantiated with OSM data for Hanoi, Vietnam. |
+| [MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels) | Brussels mobility dataset. |
+| [MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS) | TPC-DS benchmark adaptation. |
+| [MobilityDB-Tcbuffer](https://github.com/MobilityDB/MobilityDB-Tcbuffer) | AIS use case demonstrating the `tcbuffer` data type. |
+
+### Education and workshops
+
+| Repository | Description |
+|---|---|
+| [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop) | Hands-on workshop materials. |
+| [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook) | Companion datasets and scripts for the textbook (vol 1). |
+| [MobilityDataScienceBookVol2](https://github.com/MobilityDB/MobilityDataScienceBookVol2) | Companion for the follow-up volume. |
+
+### Research
+
+| Repository | Description |
+|---|---|
+| [MobilityDB-Semantic](https://github.com/MobilityDB/MobilityDB-Semantic) | Semantic-trajectory research project. |
+
+### Indexing primitives
+
+| Repository | Description |
+|---|---|
+| [mest](https://github.com/MobilityDB/mest) | Multi-Entry Search Trees for PostgreSQL — generic indexing primitive used by MobilityDB. |
+
+### Archived
+
+These repositories are preserved in read-only form for historical reference and to keep existing links resolvable. Each carries an in-README banner pointing at its successor.
+
+| Archived repository | Successor / replacement |
+|---|---|
+| [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) | [PyMEOS](https://github.com/MobilityDB/PyMEOS) |
+| [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC) | [JMEOS](https://github.com/MobilityDB/JMEOS) |
+| [pg_mfserv](https://github.com/MobilityDB/pg_mfserv) | [MobilityAPI](https://github.com/MobilityDB/MobilityAPI) |
+
+## Where to start
+
+| If you want to… | Go to |
+|---|---|
+| Understand what MEOS is, the type system, encodings, tutorials | [libmeos.org](https://libmeos.org) |
+| Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL) or [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB) |
+| Use MEOS from your language | The corresponding [language binding](https://libmeos.org/bindings/) |
+| Cite the project in academic work | The book reference above; or the `CITATION.cff` of any binding repo |
+
+## Acknowledgements
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/eu-flag.jpg" alt="EU Flag" style="width: 100px; float:left; margin-right: 10px;" align="middle" />
 <p>
 The MobilityDB project has received funding from the European Union's <a href="https://open-research-europe.ec.europa.eu/gateways/horizon-europe">Horizon Europe</a> research and innovation programme under grant agreements No 101070279 <a href="https://mobispaces.eu/" target="blank">MobiSpaces</a> and No 101093051 <a href="https://emeralds-horizon.eu/" target="blank">EMERALDS</a>.
 </p>
-
