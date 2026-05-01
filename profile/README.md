@@ -24,28 +24,28 @@ The companion datasets and reproducible scripts live in [MobilityDataScienceBook
 
 ## Repository map
 
-<img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/mobilitydb_ecosystem.png" width="700" alt="MobilityDB Ecosystem" />
+<img src="https://raw.githubusercontent.com/MobilityDB/.github/main/profile/images/mobilitydb_ecosystem.svg" width="800" alt="MobilityDB Ecosystem" />
 
-### Core C library
+### ⬛ Core C library
 
 | Repository | Description |
 |---|---|
 | [MEOS](https://libmeos.org) | Mobility Engine, Open Source — the canonical C library underlying every other piece. |
 
-### SQL layers (peers above MEOS)
+### 🟦 SQL layers (peers above MEOS)
 
 | Repository | Description |
 |---|---|
 | [MobilityDB](https://github.com/MobilityDB/MobilityDB) | PostgreSQL extension — the project's reference SQL surface. |
 | [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) | DuckDB extension — peer SQL layer for analytics / columnar workloads. |
 
-### HTTP / API layer
+### 🟩 HTTP / API layer
 
 | Repository | Description |
 |---|---|
 | [MobilityAPI](https://github.com/MobilityDB/MobilityAPI) | HTTP server implementing the OGC API – Moving Features Standard. |
 
-### Language bindings of MEOS
+### 🟪 Language bindings of MEOS
 
 Each binding follows its language community's naming convention.
 
@@ -58,13 +58,13 @@ Each binding follows its language community's naming convention.
 | [MEOS.NET](https://github.com/MobilityDB/MEOS.NET) | .NET / C# |
 | [MEOS.js](https://github.com/MobilityDB/MEOS.js) | JavaScript / TypeScript |
 
-### Tooling
+### 🟫 Tooling
 
 | Repository | Description |
 |---|---|
 | [MEOS-API](https://github.com/MobilityDB/MEOS-API) | Machine-readable description of the MEOS C-library API (`meos-api.json`), generated from the MEOS headers via libclang. Consumed by the language bindings for code generation. |
 
-### Visualization and UI integrations
+### 🟧 Visualization and UI integrations
 
 | Repository | Stack |
 |---|---|
@@ -75,7 +75,7 @@ Each binding follows its language community's naming convention.
 | [MobilityGeoServer](https://github.com/MobilityDB/MobilityGeoServer) | [GeoServer](https://geoserver.org/) |
 | [move](https://github.com/MobilityDB/move) | QGIS plugin for visualizing MobilityDB query results |
 
-### Application platforms
+### 🟨 Application platforms
 
 | Repository | Engine / framework |
 |---|---|
@@ -90,7 +90,7 @@ Each binding follows its language community's naming convention.
 | [MobilityMapMatching](https://github.com/MobilityDB/MobilityMapMatching) | Map matching as a service |
 | [MobilityDB-PublicTransport](https://github.com/MobilityDB/MobilityDB-PublicTransport) | [GTFS](https://gtfs.org/) / [Netex](https://netex-cen.eu/) integration |
 
-### Cloud and deployment
+### 🔵 Cloud and deployment
 
 | Repository | Target |
 |---|---|
@@ -99,7 +99,7 @@ Each binding follows its language community's naming convention.
 | [MobilityDB-GCP](https://github.com/MobilityDB/MobilityDB-GCP) | Google Cloud Platform |
 | [MobilityDB-docker](https://github.com/MobilityDB/MobilityDB-docker) | Docker images |
 
-### Datasets and benchmarks
+### 🟤 Datasets and benchmarks
 
 | Repository | Description |
 |---|---|
@@ -109,26 +109,26 @@ Each binding follows its language community's naming convention.
 | [MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS) | TPC-DS benchmark adaptation. |
 | [MobilityDB-Tcbuffer](https://github.com/MobilityDB/MobilityDB-Tcbuffer) | AIS use case demonstrating the `tcbuffer` data type. |
 
-### Education and workshops
+### 🟢 Education and workshops
 
 | Repository | Description |
 |---|---|
 | [MobilityDB-workshop](https://github.com/MobilityDB/MobilityDB-workshop) | Hands-on workshop materials. |
 | [MobilityDataScienceBook](https://github.com/MobilityDB/MobilityDataScienceBook) | Companion datasets and scripts for the textbook. |
 
-### Research
+### 🟥 Research
 
 | Repository | Description |
 |---|---|
 | [MobilityDB-Semantic](https://github.com/MobilityDB/MobilityDB-Semantic) | Semantic-trajectory research project. |
 
-### Indexing primitives
+### 🟣 Indexing primitives
 
 | Repository | Description |
 |---|---|
 | [mest](https://github.com/MobilityDB/mest) | Multi-Entry Search Trees for PostgreSQL — generic indexing primitive used by MobilityDB. |
 
-### Archived
+### ⬜ Archived
 
 These repositories are preserved in read-only form for historical reference and to keep existing links resolvable. Each carries an in-README banner pointing at its successor.
 
