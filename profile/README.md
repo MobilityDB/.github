@@ -80,7 +80,6 @@ Each binding follows its language community's naming convention.
 | Repository | Engine / framework |
 |---|---|
 | [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) | [Apache Spark](https://spark.apache.org/) — large-scale analytics |
-| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) variant |
 | [MobilityFlink](https://github.com/MobilityDB/MobilityFlink) | [Apache Flink](https://flink.apache.org/) — streaming |
 | [MobilityFlink-Deck](https://github.com/MobilityDB/MobilityFlink-Deck) | Flink + deck.gl integration |
 | [MobilityKafka](https://github.com/MobilityDB/MobilityKafka) | [Apache Kafka](https://kafka.apache.org/) — streaming |
@@ -138,6 +137,14 @@ These repositories are preserved in read-only form for historical reference and 
 | [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC) | [JMEOS](https://github.com/MobilityDB/JMEOS) |
 | [pg_mfserv](https://github.com/MobilityDB/pg_mfserv) | [MobilityAPI](https://github.com/MobilityDB/MobilityAPI) |
 
+### 🎓 Historical / thesis codebases
+
+Self-contained research artefacts archived for citation. Not part of the active binding line; not maintained.
+
+| Repository | Source thesis |
+|---|---|
+| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | León, L. (2024). *MobilitySpark: Big Mobility Data Management with PySpark and PyMEOS* (Master's thesis, University of Padova / Université Libre de Bruxelles). The current Spark binding is the JVM-side [MobilitySpark](https://github.com/MobilityDB/MobilitySpark). |
+
 ## Where to start
 
 | If you want to… | Go to |
@@ -146,6 +153,19 @@ These repositories are preserved in read-only form for historical reference and 
 | Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL) or [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB) |
 | Use MEOS from your language | The corresponding [language binding](https://libmeos.org/bindings/) |
 | Cite the project in academic work | The book reference above; or the `CITATION.cff` of any binding repo |
+
+## Reviewing pull requests
+
+The four-platform core repos share the same canonical PR Reviewer Guide structure: **How to find this guide → CI legend → Dependency chains → Tier 1/2/3 → Review checklist**. Each lives at `doc/contributing/reviewer-guide.md` in its respective repo and is updated in the same commit as any PR queue change.
+
+| Repo | Reviewer Guide |
+|---|---|
+| MobilityDB | [`doc/contributing/reviewer-guide.md`](https://github.com/MobilityDB/MobilityDB/blob/master/doc/contributing/reviewer-guide.md) |
+| MobilityDuck | [`doc/contributing/reviewer-guide.md`](https://github.com/MobilityDB/MobilityDuck/blob/main/doc/contributing/reviewer-guide.md) |
+| MobilitySpark | [`doc/contributing/reviewer-guide.md`](https://github.com/MobilityDB/MobilitySpark/blob/main/doc/contributing/reviewer-guide.md) |
+| JMEOS | [`doc/contributing/reviewer-guide.md`](https://github.com/MobilityDB/JMEOS/blob/main/doc/contributing/reviewer-guide.md) |
+
+Reviewers landing in any of the four repos find the same structure at the same path.
 
 ## Acknowledgements
 
