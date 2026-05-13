@@ -105,9 +105,8 @@ Each binding follows its language community's naming convention.
 
 | Repository | Description |
 |---|---|
-| [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD) | [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) data generator and benchmark, using [Open Street Map](https://www.openstreetmap.org/) data and [pgRouting](https://pgrouting.org/) (Brussels by default). |
-| [MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi) | BerlinMOD generator instantiated with OSM data for Hanoi, Vietnam. |
-| [MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels) | Brussels mobility dataset. |
+| [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD) | [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) data generator and benchmark, using [Open Street Map](https://www.openstreetmap.org/) data and [pgRouting](https://pgrouting.org/). Brussels by default; a Hanoi (Vietnam) instantiation lives in [MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi). |
+| [MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels) | Real Brussels public-transport dataset (STIB, TLC) — companion data, not a BerlinMOD instantiation. |
 | [MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS) | TPC-DS benchmark adaptation. |
 | [MobilityDB-Tcbuffer](https://github.com/MobilityDB/MobilityDB-Tcbuffer) | AIS use case demonstrating the `tcbuffer` data type. |
 
