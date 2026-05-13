@@ -34,10 +34,13 @@ The companion datasets and reproducible scripts live in [MobilityDataScienceBook
 
 ### 🟦 SQL layers (peers above MEOS)
 
+Three SQL surfaces share the same MEOS-backed type system, function catalog, and BerlinMOD reference queries. Portable SQL means the same query text runs against any of the three.
+
 | Repository | Description |
 |---|---|
 | [MobilityDB](https://github.com/MobilityDB/MobilityDB) | PostgreSQL extension — the project's reference SQL surface. |
 | [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) | DuckDB extension — peer SQL layer for analytics / columnar workloads. |
+| [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) | Apache Spark plugin — peer SQL layer for distributed and large-scale workloads, with MEOS-backed UDFs and DataFrame integration. |
 
 ### 🟩 HTTP / API layer
 
@@ -79,8 +82,7 @@ Each binding follows its language community's naming convention.
 
 | Repository | Engine / framework |
 |---|---|
-| [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) | [Apache Spark](https://spark.apache.org/) — large-scale analytics |
-| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) variant |
+| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) entry point to MobilitySpark |
 | [MobilityFlink](https://github.com/MobilityDB/MobilityFlink) | [Apache Flink](https://flink.apache.org/) — streaming |
 | [MobilityFlink-Deck](https://github.com/MobilityDB/MobilityFlink-Deck) | Flink + deck.gl integration |
 | [MobilityKafka](https://github.com/MobilityDB/MobilityKafka) | [Apache Kafka](https://kafka.apache.org/) — streaming |
@@ -103,11 +105,9 @@ Each binding follows its language community's naming convention.
 
 | Repository | Description |
 |---|---|
-| [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD) | [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) data generator and benchmark, using [Open Street Map](https://www.openstreetmap.org/) data and [pgRouting](https://pgrouting.org/) (Brussels by default). |
-| [MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi) | BerlinMOD generator instantiated with OSM data for Hanoi, Vietnam. |
-| [MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels) | Brussels mobility dataset. |
+| [MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD) | [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) data generator and benchmark, using [Open Street Map](https://www.openstreetmap.org/) data and [pgRouting](https://pgrouting.org/). Brussels by default; a Hanoi (Vietnam) instantiation lives in [MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi). |
+| [MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels) | Real Brussels public-transport dataset (STIB, TLC) — companion data, not a BerlinMOD instantiation. |
 | [MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS) | TPC-DS benchmark adaptation. |
-| [MobilityDB-Tcbuffer](https://github.com/MobilityDB/MobilityDB-Tcbuffer) | AIS use case demonstrating the `tcbuffer` data type. |
 
 ### 🟢 Education and workshops
 
@@ -143,7 +143,7 @@ These repositories are preserved in read-only form for historical reference and 
 | If you want to… | Go to |
 |---|---|
 | Understand what MEOS is, the type system, encodings, tutorials | [libmeos.org](https://libmeos.org) |
-| Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL) or [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB) |
+| Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL), [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB), or [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) (Spark) |
 | Use MEOS from your language | The corresponding [language binding](https://libmeos.org/bindings/) |
 | Cite the project in academic work | The book reference above; or the `CITATION.cff` of any binding repo |
 
