@@ -36,8 +36,9 @@ The companion datasets and reproducible scripts live in [MobilityDataScienceBook
 
 | Repository | Description |
 |---|---|
-| [MobilityDB](https://github.com/MobilityDB/MobilityDB) | PostgreSQL extension — the project's reference SQL surface. |
-| [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) | DuckDB extension — peer SQL layer for analytics / columnar workloads. |
+| [MobilityDB](https://github.com/MobilityDB/MobilityDB) | PostgreSQL extension. The project's reference SQL surface. |
+| [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) | DuckDB extension. Peer SQL layer for analytics and columnar workloads. |
+| [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) | Apache Spark layer. Peer SQL surface for large-scale distributed analytics, exposing MEOS through Spark SQL. |
 
 ### 🟩 HTTP / API layer
 
@@ -52,17 +53,20 @@ Each binding follows its language community's naming convention.
 | Repository | Language |
 |---|---|
 | [PyMEOS](https://github.com/MobilityDB/PyMEOS) | Python |
+| [PyMEOS-CFFI](https://github.com/MobilityDB/PyMEOS-CFFI) | Python (low-level CFFI layer underlying PyMEOS) |
 | [JMEOS](https://github.com/MobilityDB/JMEOS) | Java / JVM |
 | [GoMEOS](https://github.com/MobilityDB/GoMEOS) | Go |
 | [meos-rs](https://github.com/MobilityDB/meos-rs) | Rust |
 | [MEOS.NET](https://github.com/MobilityDB/MEOS.NET) | .NET / C# |
 | [MEOS.js](https://github.com/MobilityDB/MEOS.js) | JavaScript / TypeScript |
 
+Runnable example programs and notebooks live in [PyMEOS-Examples](https://github.com/MobilityDB/PyMEOS-Examples) (Python) and [JMEOS-Examples](https://github.com/MobilityDB/JMEOS-Examples) (Java).
+
 ### 🟫 Tooling
 
 | Repository | Description |
 |---|---|
-| [MEOS-API](https://github.com/MobilityDB/MEOS-API) | Machine-readable description of the MEOS C-library API (`meos-api.json`), generated from the MEOS headers via libclang. Consumed by the language bindings for code generation. |
+| [MEOS-API](https://github.com/MobilityDB/MEOS-API) | Machine-readable description of the MEOS C-library API (an IDL JSON plus a shape-metadata catalog), generated from the MEOS headers via libclang. Consumed by the language bindings for code generation. |
 
 ### 🟧 Visualization and UI integrations
 
@@ -79,8 +83,6 @@ Each binding follows its language community's naming convention.
 
 | Repository | Engine / framework |
 |---|---|
-| [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) | [Apache Spark](https://spark.apache.org/) — large-scale analytics |
-| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) variant |
 | [MobilityFlink](https://github.com/MobilityDB/MobilityFlink) | [Apache Flink](https://flink.apache.org/) — streaming |
 | [MobilityFlink-Deck](https://github.com/MobilityDB/MobilityFlink-Deck) | Flink + deck.gl integration |
 | [MobilityKafka](https://github.com/MobilityDB/MobilityKafka) | [Apache Kafka](https://kafka.apache.org/) — streaming |
@@ -107,7 +109,6 @@ Each binding follows its language community's naming convention.
 | [MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi) | BerlinMOD generator instantiated with OSM data for Hanoi, Vietnam. |
 | [MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels) | Brussels mobility dataset. |
 | [MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS) | TPC-DS benchmark adaptation. |
-| [MobilityDB-Tcbuffer](https://github.com/MobilityDB/MobilityDB-Tcbuffer) | AIS use case demonstrating the `tcbuffer` data type. |
 
 ### 🟢 Education and workshops
 
@@ -136,6 +137,7 @@ These repositories are preserved in read-only form for historical reference and 
 |---|---|
 | [MobilityDB-python](https://github.com/MobilityDB/MobilityDB-python) | [PyMEOS](https://github.com/MobilityDB/PyMEOS) |
 | [MobilityDB-JDBC](https://github.com/MobilityDB/MobilityDB-JDBC) | [JMEOS](https://github.com/MobilityDB/JMEOS) |
+| [MobilityPySpark](https://github.com/MobilityDB/MobilityPySpark) | [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) |
 | [pg_mfserv](https://github.com/MobilityDB/pg_mfserv) | [MobilityAPI](https://github.com/MobilityDB/MobilityAPI) |
 
 ## Where to start
@@ -143,7 +145,7 @@ These repositories are preserved in read-only form for historical reference and 
 | If you want to… | Go to |
 |---|---|
 | Understand what MEOS is, the type system, encodings, tutorials | [libmeos.org](https://libmeos.org) |
-| Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL) or [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB) |
+| Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL), [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB), or [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) (Spark SQL) |
 | Use MEOS from your language | The corresponding [language binding](https://libmeos.org/bindings/) |
 | Cite the project in academic work | The book reference above; or the `CITATION.cff` of any binding repo |
 
