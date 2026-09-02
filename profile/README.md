@@ -67,7 +67,8 @@ The same edge-to-cloud model runs on the streaming side, each tool in its canoni
 
 ### 🟩 HTTP / API layer
 
-- **[MobilityAPI](https://github.com/MobilityDB/MobilityAPI)** · [OGC API – Moving Features](https://www.ogc.org/standards/ogc-api-moving-features/) — server over moving-feature collections, built on MobilityDB via PyMEOS.
+- **[MobilityAPI](https://github.com/MobilityDB/MobilityAPI)** · [OGC API – Moving Features](https://www.ogc.org/standards/ogc-api-moving-features/) — a thin compiled (Go) server over moving-feature collections. It holds no temporal engine of its own: every temporal expression is named SQL the engine evaluates, so the same tier runs over MobilityDB, MobilityDuck or MobilitySpark, and its streaming surface reaches MEOS in process or through the Flink and Kafka bridges. It carries the Part 1 Annex A abstract test suite as its own tests, against a MobilityDB built from master.
+- **[MobilityAPI-Python](https://github.com/MobilityDB/MobilityAPI-Python)** · [OGC API – Moving Features](https://www.ogc.org/standards/ogc-api-moving-features/) — the same standard in Python over PyMEOS, the line MobilityAPI grew out of.
 
 Three further HTTP surfaces are projected from the **[MEOS-API](https://github.com/MobilityDB/MEOS-API)** catalog over the MEOS algebra:
 - **OpenAPI** — an OpenAPI 3.1 contract.
@@ -78,7 +79,7 @@ Three further HTTP surfaces are projected from the **[MEOS-API](https://github.c
 
 Each binding follows its language community's naming convention.
 
-- **[PyMEOS](https://github.com/MobilityDB/PyMEOS)** — Python; the reference binding, and the basis for MobilityPandas and MobilityAPI.
+- **[PyMEOS](https://github.com/MobilityDB/PyMEOS)** — Python; the reference binding, and the basis for MobilityPandas and MobilityAPI-Python.
 - **[JMEOS](https://github.com/MobilityDB/JMEOS)** — Java / JVM; also backs the MobilityFlink and MobilityKafka stream layers via `MEOSBridge`.
 - **[GoMEOS](https://github.com/MobilityDB/GoMEOS)** — Go; idiomatic wrappers over the MEOS C ABI.
 - **[meos-rs](https://github.com/MobilityDB/meos-rs)** — Rust; safe bindings to MEOS.
