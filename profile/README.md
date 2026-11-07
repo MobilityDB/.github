@@ -33,7 +33,7 @@ Evidence that the ecosystem is complete, correct, and ready for real-world deplo
 
 <img src="https://raw.githubusercontent.com/MobilityDB/.github/main/profile/images/mobilitydb_ecosystem.svg?v=4" width="800" alt="MobilityDB Ecosystem — MEOS C core as the foundation; MobilityDB/MobilityDuck/MobilitySpark SQL layers, MobilityNebula/MobilityKafka/MobilityFlink stream layers, MobilityAPI plus the MEOS-API OpenAPI/MCP/runtime contracts as the HTTP/API layer, and six language bindings as peer surfaces; MEOS-API as a side codegen catalog (IDL JSON + shape catalog); application, visualization and cloud as the top layer; a portable-data band (TemporalParquet, MobilityLakehouse) beneath MEOS" />
 
-Each section below maps to a colored box in the figure (its heading marker matches the box color); each bullet is one of that box's inner components.
+Each section below maps to a colored box in the figure (its heading marker matches the box color); the figure draws the main components of each box, and the bullets list all of them.
 
 ### 🟩 Portable data
 
