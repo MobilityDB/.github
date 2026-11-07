@@ -145,6 +145,7 @@ Each binding follows its language community's naming convention.
 
 - **[MobilityDB-Semantic](https://github.com/MobilityDB/MobilityDB-Semantic)** — semantic trajectories in MobilityDB; reproducible artifacts accompanying the research.
 - **[MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS)** — a TPC-DS-based temporal data-warehouse benchmark; reproducible artifacts accompanying the [temporal-OLAP article](https://link.springer.com/article/10.1007/s00778-024-00889-2).
+- **[FoundationModel](https://github.com/MobilityDB/FoundationModel)** — a semantics-enriched trajectory foundation model for urban and maritime mobility: enrichment pipelines and a Transformer-based encoder; the code of the accompanying Master's thesis.
 
 ### 🗂️ Indexing primitives
 
