@@ -85,12 +85,12 @@ Three further HTTP surfaces are projected from the **[MEOS-API](https://github.c
 
 Each binding follows its language community's naming convention.
 
-- **[PyMEOS](https://github.com/MobilityDB/PyMEOS)** — Python; the reference binding, built on the CFFI layer [PyMEOS-CFFI](https://github.com/MobilityDB/PyMEOS-CFFI), and the basis for MobilityPandas and MobilityAPI-Python.
-- **[JMEOS](https://github.com/MobilityDB/JMEOS)** — Java / JVM; also backs the MobilityFlink and MobilityKafka stream layers via `MEOSBridge`.
+- **[PyMEOS](https://github.com/MobilityDB/PyMEOS)** — Python; the reference binding, built on the CFFI layer [PyMEOS-CFFI](https://github.com/MobilityDB/PyMEOS-CFFI), and the basis for MobilityPandas and MobilityAPI-Python; examples in [PyMEOS-Examples](https://github.com/MobilityDB/PyMEOS-Examples).
+- **[JMEOS](https://github.com/MobilityDB/JMEOS)** — Java / JVM; also backs the MobilityFlink and MobilityKafka stream layers via `MEOSBridge`; examples in [JMEOS-Examples](https://github.com/MobilityDB/JMEOS-Examples).
 - **[GoMEOS](https://github.com/MobilityDB/GoMEOS)** — Go; idiomatic wrappers over the MEOS C ABI.
 - **[meos-rs](https://github.com/MobilityDB/meos-rs)** — Rust; safe bindings to MEOS.
 - **[MEOS.NET](https://github.com/MobilityDB/MEOS.NET)** — .NET / C#; MEOS for the .NET runtime.
-- **[MEOS.js](https://github.com/MobilityDB/MEOS.js)** — JavaScript / TypeScript; MEOS in the browser and Node.
+- **[MEOS.js](https://github.com/MobilityDB/MEOS.js)** — JavaScript / TypeScript; MEOS in the browser and Node; examples in [MEOS.js-examples](https://github.com/MobilityDB/MEOS.js-examples).
 
 ### 🟨 Application platforms
 
