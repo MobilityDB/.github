@@ -127,9 +127,8 @@ Each binding follows its language community's naming convention.
 
 [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) is the project's benchmark — a synthetic-trajectory generator and moving-object-database comparison tool that generates data on an [OpenStreetMap](https://www.openstreetmap.org/) base map via [pgRouting](https://pgrouting.org/), and the cross-platform conformance suite for the portable SQL dialect: the same queries run on all three SQL surfaces and must return identical results.
 
-- **[MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD)** — the BerlinMOD generator and benchmark itself.
-- **[MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels)** — BerlinMOD instantiated on the **Brussels** base map (default).
-- **[MobilityDB-BerlinMOD-Hanoi](https://github.com/MobilityDB/MobilityDB-BerlinMOD-Hanoi)** — BerlinMOD instantiated on the **Hanoi** (Vietnam) base map.
+- **[MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD)** — the BerlinMOD generator and benchmark itself, with the base maps of **Brussels** (default, [`BerlinMOD/brussels`](https://github.com/MobilityDB/MobilityDB-BerlinMOD/tree/master/BerlinMOD/brussels)) and **Hanoi** (Vietnam, [`BerlinMOD/hanoi`](https://github.com/MobilityDB/MobilityDB-BerlinMOD/tree/master/BerlinMOD/hanoi)).
+- **[MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels)** — a MobilityDB implementation of [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html).
 
 ### 🎓 Education and workshops
 
