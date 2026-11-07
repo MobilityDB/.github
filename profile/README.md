@@ -7,7 +7,7 @@ This organization hosts the source code for the **MobilityDB ecosystem** — an 
 
 For the **conceptual overview, type system, tutorials, quickstarts, and encoding specifications**, see [**libmeos.org**](https://libmeos.org) — the project's public front door. This page is the **repository map**: where each piece of code lives.
 
-The project is developed by the Computer & Decision Engineering Department of the [Université libre de Bruxelles (ULB)](https://www.ulb.be/) under the direction of [Prof. Esteban Zimányi](http://cs.ulb.ac.be/members/esteban/). ULB is an OGC Associate Member and member of the OGC Moving Feature Standard Working Group ([MF-SWG](https://www.ogc.org/projects/groups/movfeatswg)).
+The project is developed by the Computer & Decision Engineering Department of the [Université libre de Bruxelles (ULB)](https://www.ulb.be/) under the direction of [Prof. Esteban Zimányi](http://cs.ulb.ac.be/members/esteban/). ULB is an OGC Associate Member and member of the OGC Moving Feature Standard Working Group ([MF-SWG](https://www.ogc.org/standards-working-gr/moving-features-swg-movfeat-swg/)).
 
 <img src="https://github.com/MobilityDB/MobilityDB/blob/master/doc/images/OGC_Associate_Member_3DR.png" width="100" alt="OGC Associate Member Logo" />
 
@@ -31,16 +31,16 @@ Evidence that the ecosystem is complete, correct, and ready for real-world deplo
 
 ## Repository map
 
-<img src="https://raw.githubusercontent.com/MobilityDB/.github/main/profile/images/mobilitydb_ecosystem.svg?v=3" width="800" alt="MobilityDB Ecosystem — MEOS C core as the foundation; MobilityDB/MobilityDuck/MobilitySpark SQL layers, MobilityNebula/MobilityKafka/MobilityFlink stream layers, MobilityAPI plus the MEOS-API OpenAPI/MCP/runtime contracts as the HTTP/API layer, and six language bindings as peer surfaces; MEOS-API as a side codegen catalog (IDL JSON + shape catalog); application, visualization and cloud as the top layer; a portable-data band (TemporalParquet, Temporal Data Lake) beneath MEOS" />
+<img src="https://raw.githubusercontent.com/MobilityDB/.github/main/profile/images/mobilitydb_ecosystem.svg?v=4" width="800" alt="MobilityDB Ecosystem — MEOS C core as the foundation; MobilityDB/MobilityDuck/MobilitySpark SQL layers, MobilityNebula/MobilityKafka/MobilityFlink stream layers, MobilityAPI plus the MEOS-API OpenAPI/MCP/runtime contracts as the HTTP/API layer, and six language bindings as peer surfaces; MEOS-API as a side codegen catalog (IDL JSON + shape catalog); application, visualization and cloud as the top layer; a portable-data band (TemporalParquet, MobilityLakehouse) beneath MEOS" />
 
-Each section below maps to a colored box in the figure (its heading marker matches the box color); each bullet is one of that box's inner components.
+Each section below maps to a colored box in the figure (its heading marker matches the box color); the figure draws the main components of each box, and the bullets list all of them.
 
 ### 🟩 Portable data
 
 The interchange band drawn beneath MEOS: trajectories move between the engines and the **[MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse)** without re-encoding — the data-side complement of the SQL layers' *portable computation*. The MobilityLakehouse repository is the single home for the overview, the format specification, the getting-started guide, and the live [AIS Iceberg Explorer](https://ais-explorer-833836401560.europe-west1.run.app/) demo.
 
-- **TemporalParquet** — the **on-disk** form: a [Parquet](https://parquet.apache.org/) footer convention for temporal types ([RFC #870](https://github.com/MobilityDB/MobilityDB/discussions/870)).
-- **[MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse)** — the **storage architecture**: trajectories as [Apache Iceberg](https://iceberg.apache.org/) tables under an [Apache Polaris](https://polaris.apache.org/) REST catalog (RBAC, multi-tenancy, credential vending), read by columnar engines such as [Polars](https://pola.rs/) straight off the Arrow stream.
+- **TemporalParquet** — the **on-disk** form: a [Parquet](https://parquet.apache.org/) footer convention for temporal types ([specification](https://github.com/MobilityDB/MobilityLakehouse/blob/main/TemporalParquet.md)).
+- **[MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse)** — the **storage architecture**: TemporalParquet files organised as [Apache Iceberg](https://iceberg.apache.org/) tables (or [DuckLake](https://github.com/MobilityDB/MobilityLakehouse/blob/main/spec/table-formats.md) tables over the same files) under an Iceberg REST catalog, [Apache Polaris](https://polaris.apache.org/) recommended, and read by MobilityDB, MobilityDuck and MobilitySpark without conversion.
 
 ### 🟪 Core C library
 
@@ -85,12 +85,12 @@ Three further HTTP surfaces are projected from the **[MEOS-API](https://github.c
 
 Each binding follows its language community's naming convention.
 
-- **[PyMEOS](https://github.com/MobilityDB/PyMEOS)** — Python; the reference binding, and the basis for MobilityPandas and MobilityAPI-Python.
-- **[JMEOS](https://github.com/MobilityDB/JMEOS)** — Java / JVM; also backs the MobilityFlink and MobilityKafka stream layers via `MEOSBridge`.
+- **[PyMEOS](https://github.com/MobilityDB/PyMEOS)** — Python; the reference binding, built on the CFFI layer [PyMEOS-CFFI](https://github.com/MobilityDB/PyMEOS-CFFI), and the basis for MobilityPandas and MobilityAPI-Python; examples in [PyMEOS-Examples](https://github.com/MobilityDB/PyMEOS-Examples).
+- **[JMEOS](https://github.com/MobilityDB/JMEOS)** — Java / JVM; also backs the MobilityFlink and MobilityKafka stream layers via `MEOSBridge`; examples in [JMEOS-Examples](https://github.com/MobilityDB/JMEOS-Examples).
 - **[GoMEOS](https://github.com/MobilityDB/GoMEOS)** — Go; idiomatic wrappers over the MEOS C ABI.
 - **[meos-rs](https://github.com/MobilityDB/meos-rs)** — Rust; safe bindings to MEOS.
 - **[MEOS.NET](https://github.com/MobilityDB/MEOS.NET)** — .NET / C#; MEOS for the .NET runtime.
-- **[MEOS.js](https://github.com/MobilityDB/MEOS.js)** — JavaScript / TypeScript; MEOS in the browser and Node.
+- **[MEOS.js](https://github.com/MobilityDB/MEOS.js)** — JavaScript / TypeScript; MEOS in the browser and Node; examples in [MEOS.js-examples](https://github.com/MobilityDB/MEOS.js-examples).
 
 ### 🟨 Application platforms
 
@@ -145,6 +145,7 @@ Each binding follows its language community's naming convention.
 
 - **[MobilityDB-Semantic](https://github.com/MobilityDB/MobilityDB-Semantic)** — semantic trajectories in MobilityDB; reproducible artifacts accompanying the research.
 - **[MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS)** — a TPC-DS-based temporal data-warehouse benchmark; reproducible artifacts accompanying the [temporal-OLAP article](https://link.springer.com/article/10.1007/s00778-024-00889-2).
+- **[FoundationModel](https://github.com/MobilityDB/FoundationModel)** — a semantics-enriched trajectory foundation model for urban and maritime mobility: enrichment pipelines and a Transformer-based encoder; the code of the accompanying Master's thesis.
 
 ### 🗂️ Indexing primitives
 
@@ -171,7 +172,7 @@ Preserved in read-only form for historical reference and to keep existing links 
 | Use the SQL surface | [MobilityDB](https://github.com/MobilityDB/MobilityDB) (PostgreSQL), [MobilityDuck](https://github.com/MobilityDB/MobilityDuck) (DuckDB), or [MobilitySpark](https://github.com/MobilityDB/MobilitySpark) (Spark) |
 | Process trajectories as streams | [MobilityNebula](https://github.com/MobilityDB/MobilityNebula) (NebulaStream), [MobilityKafka](https://github.com/MobilityDB/MobilityKafka) (Kafka), or [MobilityFlink](https://github.com/MobilityDB/MobilityFlink) (Flink) |
 | Serve or call MEOS over HTTP | [MobilityAPI](https://github.com/MobilityDB/MobilityAPI) — [OGC API – Moving Features](https://www.ogc.org/standards/ogc-api-moving-features/) over feature collections; [MEOS-API](https://github.com/MobilityDB/MEOS-API) — an OpenAPI 3.1 contract, an MCP tool manifest and a runtime server over the MEOS algebra |
-| Move data between engines / build a lakehouse | Parquet / *TemporalParquet*; the **[MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse)** stores to [Apache Iceberg](https://iceberg.apache.org/) under an [Apache Polaris](https://polaris.apache.org/) catalog, read by [Polars](https://pola.rs/) — start at the [MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse) repository |
+| Move data between engines / build a lakehouse | Parquet / *TemporalParquet*; the **[MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse)** stores to [Apache Iceberg](https://iceberg.apache.org/) under an Iceberg REST catalog such as [Apache Polaris](https://polaris.apache.org/), read by MobilityDB, MobilityDuck and MobilitySpark — start at the [MobilityLakehouse](https://github.com/MobilityDB/MobilityLakehouse) repository |
 | Use MEOS from your language | [PyMEOS](https://github.com/MobilityDB/PyMEOS) (Python), [JMEOS](https://github.com/MobilityDB/JMEOS) (Java / JVM), [GoMEOS](https://github.com/MobilityDB/GoMEOS) (Go), [meos-rs](https://github.com/MobilityDB/meos-rs) (Rust), [MEOS.NET](https://github.com/MobilityDB/MEOS.NET) (.NET / C#), or [MEOS.js](https://github.com/MobilityDB/MEOS.js) (JavaScript / TypeScript) |
 | Cite the project in academic work | The book reference above; or the `CITATION.cff` of any binding repo |
 
