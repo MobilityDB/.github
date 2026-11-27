@@ -130,7 +130,6 @@ Each binding follows its language community's naming convention.
 [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html) is the project's benchmark — a synthetic-trajectory generator and moving-object-database comparison tool that generates data on an [OpenStreetMap](https://www.openstreetmap.org/) base map via [pgRouting](https://pgrouting.org/), and the cross-platform conformance suite for the portable SQL dialect: the same queries run on all three SQL surfaces and must return identical results.
 
 - **[MobilityDB-BerlinMOD](https://github.com/MobilityDB/MobilityDB-BerlinMOD)** — the BerlinMOD generator and benchmark itself, with the base maps of **Brussels** (default, [`BerlinMOD/brussels`](https://github.com/MobilityDB/MobilityDB-BerlinMOD/tree/master/BerlinMOD/brussels)) and **Hanoi** (Vietnam, [`BerlinMOD/hanoi`](https://github.com/MobilityDB/MobilityDB-BerlinMOD/tree/master/BerlinMOD/hanoi)).
-- **[MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels)** — a MobilityDB implementation of [BerlinMOD](https://secondo-database.github.io/BerlinMOD/BerlinMOD.html).
 
 ### 🎓 Education and workshops
 
@@ -147,6 +146,7 @@ Each binding follows its language community's naming convention.
 - **[MobilityDB-Semantic](https://github.com/MobilityDB/MobilityDB-Semantic)** — semantic trajectories in MobilityDB; reproducible artifacts accompanying the research.
 - **[MobilityDB-TPCDS](https://github.com/MobilityDB/MobilityDB-TPCDS)** — a TPC-DS-based temporal data-warehouse benchmark; reproducible artifacts accompanying the [temporal-OLAP article](https://link.springer.com/article/10.1007/s00778-024-00889-2).
 - **[FoundationModel](https://github.com/MobilityDB/FoundationModel)** — a semantics-enriched trajectory foundation model for urban and maritime mobility: enrichment pipelines and a Transformer-based encoder; the code of the accompanying Master's thesis.
+- **[MobilityDB-Brussels](https://github.com/MobilityDB/MobilityDB-Brussels)** — ingestion, alarms and visualization of real-time Brussels public-transport data (STIB) with MobilityDB, PyMEOS and Kafka; the code of the accompanying Master's thesis.
 
 ### 🗂️ Indexing primitives
 
