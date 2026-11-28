@@ -104,6 +104,7 @@ Each binding follows its language community's naming convention.
 ### 🟧 Visualization and UI integrations
 
 - **[MobilityDeck](https://github.com/MobilityDB/MobilityDeck)** — [deck.gl](https://deck.gl/).
+- **[MEOS.js-examples](https://github.com/MobilityDB/MEOS.js-examples)** — MEOS in the browser through MEOS.js: animated BerlinMOD trips with [deck.gl](https://deck.gl/) over MapLibre, trips compared at equal progress, and [JupyterLite](https://jupyterlite.readthedocs.io/) notebooks.
 - **[MobilityFlink-Deck](https://github.com/MobilityDB/MobilityFlink-Deck)** — [deck.gl](https://deck.gl/) on the Flink stream layer.
 - **[MobilityOpenLayers](https://github.com/MobilityDB/MobilityOpenLayers)** — [OpenLayers](https://openlayers.org/).
 - **[MobilityLeaflet](https://github.com/MobilityDB/MobilityLeaflet)** — [Leaflet](https://leafletjs.com/).
